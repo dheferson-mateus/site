@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DM</title>
+  <!-- Fonte moderna do Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      /* Fundo gradiente elegante */
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    .message {
+      /* Limitar largura para textos longos e manter responsivo */
+      max-width: 600px;
+      width: 100%;
+    }
+    .message h1 {
+      /* Texto grande e escalável */
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 600;
+      line-height: 1.1;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    /* Pequena animação de entrada */
+    .message h1 {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h1>Estamos em manutenção.</h1>
+  </div>
+</body>
+</html>
